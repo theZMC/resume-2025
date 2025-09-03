@@ -34,6 +34,11 @@
             background: #eddfe4;
             background: linear-gradient(45deg, rgba(237, 223, 228, 1) 0%, rgba(215, 231, 247, 1) 100%);
         }
+        @media (max-width: 400px) {
+            body {
+                padding: 15px;
+            }
+        }
         body > header {
             display: flex;
             padding: 20px 0;
@@ -96,11 +101,11 @@
         #technical-skills > ul, #certifications > ul {
             display: flex;
             flex-wrap: wrap;
-            justify-content: center;
             gap: 10px;
         }
-        #certifications > ul {
-            flex-wrap: wrap;
+        #certifications > ul::after, #technical-skills > ul::after {
+            content: '';
+            flex-grow: 10000000000000;
         }
         #technical-skills li, #certifications li a {
             padding: 10px;
