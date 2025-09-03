@@ -1,36 +1,345 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Zach Callahan's Resume</title>
+    <title>Zach Callahan — Resume</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        ul {
+            list-style: none;
+        }
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+        header, nav, main {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        h1, h2, h3 {
+            color: #4b78a4;
+        }
+        main {
+            background: #ffffffcc;
+        }
+        body {
+            padding: 50px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            background: #eddfe4;
+            background: linear-gradient(45deg, rgba(237, 223, 228, 1) 0%, rgba(215, 231, 247, 1) 100%);
+        }
+        body > header {
+            display: flex;
+            padding: 20px 0;
+        }
+        body > main {
+            display: flex;
+            padding: 20px;
+            border: 1px solid #4b78a4;
+            border-radius: 20px;
+            margin-bottom: 20px;
+        }
+        body > nav {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+        header > address {
+            margin-left: auto;
+        }
+        body > nav > ul {
+            display: flex;
+            width: 100%;
+            gap: 20px;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+        body > nav > ul > li {
+            margin: 0 0;
+            display: flex;
+            flex-grow: 1;
+        }
+        body > nav > ul > li > a {
+            background: #ffffffaa;
+            border: 1px solid #4b78a4;
+            border-bottom-width: 3px;
+            border-radius: 20px;
+            flex-grow: 1;
+            padding: 20px;
+            transition: all 100ms ease-in-out;
+            text-align: center;
+        }
+        body > nav > ul > li > a:hover {
+            background-color: #ffffff;
+            border-bottom-width: 5px;
+            margin-top: -2px;
+        }
+        body > nav > ul > li > a:active {
+            border-bottom-width: 1px;
+            margin-top: 2px;
+        }
+        body > main {
+            flex-direction: column;
+            gap: 20px;
+        }
+        #technical-skills, #certifications {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        #technical-skills > ul, #certifications > ul {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
+        }
+        #certifications > ul {
+            flex-wrap: wrap;
+        }
+        #technical-skills li, #certifications li a {
+            padding: 10px;
+            border-radius: 10px;
+            border: 1px solid #4b78a4;
+            flex-grow: 1;
+        }
+        #certifications li {
+            display: flex;
+        }
+        #certifications li a {
+            border-bottom-width: 3px;
+            transition: all 100ms ease-in-out;
+            text-align: center;
+        }
+        #certifications li a:hover {
+            background-color: #ffffff;
+            border-bottom-width: 5px;
+            margin-top: -2px;
+        }
+        #certifications li a:active {
+            border-bottom-width: 1px;
+            margin-top: 2px;
+        }
+        #professional-experience {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+        #professional-experience > article {
+            border-top: 1px solid #dddddd;
+            padding-top: 10px;
+        }
+        #professional-experience > article > header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        .job-info {
+            text-align: right;
+        }
+        #professional-experience ul {
+            list-style: disc;
+            padding-left: 20px;
+        }
+    </style>
 </head>
+
 <body>
     <header>
-        <h1>Zach Callahan's Resume</h1>
-        <nav>
-            <ul>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-            </ul>
-        </nav>
+        <h1>Zach Callahan</h1>
+        <address>
+            <a href="mailto:zach@zmc.dev">zach@zmc.dev</a><br>
+            <a href="tel:+14794595787">(479) 459-5787</a>
+        </address>
     </header>
+
+    <nav>
+        <ul>
+            <li><a href="#objective">Objective</a></li>
+            <li><a href="#technical-skills">Technical Skills</a></li>
+            <li><a href="#certifications">Certifications</a></li>
+            <li><a href="#professional-experience">Professional Experience</a></li>
+            <li><a href="#education">Education</a></li>
+        </ul>
+    </nav>
+
     <main>
-        <section>
-            <h2>Skills</h2>
-        </section>
-        <section>
-            <h2>Work History</h2>
-        </section>
-        <section>
-            <h2>Certifications</h2>
-        </section>
-        <section>
+        <section id="objective">
             <h2>Objective</h2>
+            <p>Experienced engineer with a strong containerization focus, looking for a young company where I can help
+                define engineering focus and develop highly-available, high-traffic applications.</p>
+        </section>
+
+        <section id="technical-skills">
+            <h2>Technical Skills</h2>
+            <ul>
+                <li>Linux/Unix</li>
+                <li>Bash</li>
+                <li>Go</li>
+                <li>TypeScript</li>
+                <li>Java</li>
+                <li>AWS</li>
+                <li>Spark</li>
+                <li>Scala</li>
+                <li>Kubernetes</li>
+                <li>Docker</li>
+                <li>DevOps</li>
+                <li>Terraform</li>
+                <li>Argo CD</li>
+                <li>CI/CD</li>
+                <li>Cybersecurity</li>
+                <li>System Administration</li>
+                <li>Platform Engineering</li>
+                <li>Web Development</li>
+            </ul>
+        </section>
+
+        <section id="certifications">
+            <h2>Certifications</h2>
+            <ul>
+                <li>
+                    <a href="https://www.cncf.io/training/certification/cka/">
+                        Certified Kubernetes Administrator(CKA)
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.credly.com/badges/8665ccc6-5537-4909-a205-4aa3d0022f0d">
+                        Certified Kubernetes Security Specialist (CKS)
+                    </a>
+                </li>
+                <li>
+                    <a href="https://aws.amazon.com/certification/certified-solutions-architect-associate/">
+                        AWS Certified Solutions Architect - Associate
+                    </a>
+                </li>
+            </ul>
+        </section>
+
+        <section id="professional-experience">
+            <h2>Professional Experience</h2>
+
+            <article>
+                <header>
+                    <h3>Senior DevSecOps Engineer</h3>
+                    <div class="job-info">
+                        <p><strong>Bridgephase</strong> — Arlington, VA (Remote)</p>
+                        <p><time datetime="2024-08">August 2024</time> - <time datetime="2025-09">Present</time></p>
+                    </div>
+                </header>
+                <ul>
+                    <li>Maintainer on an open-source U.S. Air Force project providing an out-of-the-box secure computing
+                        environment for software development and deployment built on Kubernetes. <a
+                            href="https://repo1.dso.mil/big-bang/bigbang">Project link</a></li>
+                    <li>Led architectural redesigns of core packages focused on service mesh and observability
+                        implementations.</li>
+                    <li>Originated and documented best practices for architectural changes across core packages.</li>
+                    <li>Directed teams in best practices implementing runtime observability with a strong focus on
+                        OpenTelemetry.</li>
+                </ul>
+            </article>
+
+            <article>
+                <header>
+                    <h3>Software Engineer</h3>
+                    <div class="job-info">
+                        <p><strong>First Orion</strong> — North Little Rock, AR</p>
+                        <p><time datetime="2022-01">January 2022</time> - <time datetime="2024-08">August 2024</time></p>
+                    </div>
+                </header>
+                <ul>
+                    <li>Architected and implemented multiple customer-facing solutions.</li>
+                    <li>Designed and implemented a CI/CD solution that doubled developer velocity and increased runtime
+                        observability.</li>
+                    <li>Pioneered adoption of modern cloud-native solutions to increase organizational efficiency and
+                        reduce development roadblocks.</li>
+                    <li>Served as subject-matter expert for Kubernetes and containerized application deployments.</li>
+                </ul>
+            </article>
+
+            <article>
+                <header>
+                    <h3>System Administrator</h3>
+                    <div class="job-info">
+                        <p><strong>Dillard's, Inc.</strong> — Little Rock, AR</p>
+                        <p><time datetime="2021-04">April 2021</time> - <time datetime="2022-01">January 2022</time></p>
+                    </div>
+                </header>
+                <ul>
+                    <li>Maintained multiple external and internal web applications across RHEL and AIX hosts in an IBM
+                        Power environment.</li>
+                    <li>Automated TLS certificate provisioning with an internal/private certificate authority.</li>
+                    <li>Implemented logging and metric aggregation for OpenShift migration.</li>
+                    <li>Collaborated with platform team to identify and resolve roadblocks for OpenShift/Kubernetes
+                        adoption.</li>
+                    <li>Automated migration from outdated version control systems to a new git-based internal source
+                        control platform.</li>
+                </ul>
+            </article>
+
+            <article>
+                <header>
+                    <h3>General Manager</h3>
+                    <div class="job-info">
+                        <p><strong>Love’s Travel Stops</strong> — AR and OK</p>
+                        <p><time datetime="2017-09">September 2017</time> - <time datetime="2021-04">April 2021</time></p>
+                    </div>
+                </header>
+                <ul>
+                    <li>Led store teams of 25-50 individual contributors across quick-service restaurant, truck care,
+                        and convenience store concepts.</li>
+                    <li>Consistently grew revenue and margin at several locations.</li>
+                    <li>Directed merchandising operations and maintained cash controls.</li>
+                    <li>Served as the HR point of contact with hiring and termination responsibilities.</li>
+                </ul>
+            </article>
+
+            <article>
+                <header>
+                    <h3>Assistant Store Manager</h3>
+                    <div class="job-info">
+                        <p><strong>Walmart Stores Inc.</strong> — Fort Smith, AR</p>
+                        <p><time datetime="2008-10">October 2008</time> - <time datetime="2017-09">September 2017</time></p>
+                    </div>
+                </header>
+                <ul>
+                    <li>Led operations teams across departments and served as acting store manager as needed.</li>
+                    <li>Created merchandising plans and mentored department managers in merchandising operations.</li>
+                </ul>
+            </article>
+
+            <article>
+                <header>
+                    <h3>68W1O Combat Medic</h3>
+                    <div class="job-info">
+                        <p><strong>U.S. Army</strong> — Barling, AR</p>
+                        <p>
+                            <time datetime="2011-11">November 2011</time> - <time datetime="2017-11">November 2017</time>
+                            (Honorable)
+                        </p>
+                    </div>
+                </header>
+                <ul>
+                    <li>Served as squad leader of an ambulance team.</li>
+                    <li>Maintained medical and military equipment and unit readiness.</li>
+                    <li>Managed medical reporting and HIPAA compliance.</li>
+                </ul>
+            </article>
+        </section>
+
+        <section id="education">
+            <h2>Education</h2>
+            <p>
+                <strong>University of Arkansas - Fort Smith</strong> —
+                <time datetime="2008">2008</time>-<time datetime="2012">2012</time>
+            </p>
         </section>
     </main>
-    <footer></footer>
 </body>
+
 </html>
